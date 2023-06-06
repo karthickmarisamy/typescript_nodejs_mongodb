@@ -46,3 +46,12 @@ import cors from 'cors';
 npm i express http body-parser cookie-parser cors compression
 
 npm i -D @types/express @types/body-parser @types/cookie-parser @types/cors @types/compression
+
+Create a mongodb atlas and access url
+
+npm install mongoose
+npm i -D @types/mongoose
+
+create folder called databased inside the src folder along with users.ts file 
+
+In that file create a schema using mongoose
