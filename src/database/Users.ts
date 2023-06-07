@@ -25,7 +25,7 @@ export const getUserBySession = (sessionToken: string) =>userModel.findOne({
     'authentication.sessiontoken' : sessionToken
 });
 export const getUserById = (id: string) =>userModel.findById({id});
-export const createUser = (values) =>new userModel(values).save().then((user)=>user.toObject());
-export const updateUser = (id, values) => userModel.findByIdAndUpdate(id, values);
-export const deleteUser = (id) => userModel.findByIdAndDelete({_id:id});
+export const createUser = (values: any) =>new userModel(values).save().then((user)=>user.toObject());
+export const updateUser = (id: string, values: any) => userModel.findByIdAndUpdate(id, values);
+export const deleteUser = (id: string) => userModel.findByIdAndDelete({_id:id});
 
