@@ -55,3 +55,8 @@ npm i -D @types/mongoose
 create folder called databased inside the src folder along with users.ts file 
 
 In that file create a schema using mongoose
+
+Middleware
+
+npm i lodash
+npm i -D @types/lodash
